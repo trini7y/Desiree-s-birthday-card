@@ -1,0 +1,161 @@
+.pictures{
+	background:white;
+	margin-left:20%;
+	margin-top:2.5%; 
+	background-color: $main-two;
+	width:60%;
+	height:90%;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .2),
+	-8px -8px 2px -1px rgba(0, 0, 0, .2);
+	position: absolute;
+	text-align:center;
+	display: grid;
+	grid-template-columns: 3fr 3fr;
+    grid-template-rows: 4fr 4fr 4fr ;
+    margin-left:-70%;
+}
+
+.button{
+	position:fixed;
+	background-color: $disc-area;
+	border:0.3px solid black;
+	border-radius: 2px;
+	width:5%;
+	font-size:1.4em;
+	font-family: 'Gloria Hallelujah', cursive;
+	left:85%;
+	top:45%;
+}
+.prev{
+	@extend .button;
+	left:10%;
+}
+.grid-item{ 
+  // border: 2px solid hsla(0, 0%, 0%, 0.5);
+
+}
+.big-hair{
+	background:$big-hair;
+}
+
+svg{
+
+	.hair{
+		
+		// animation:hair-color 14s  ease-in infinite alternate;	
+	}
+}
+
+.spoon{
+	transform: translate(125px, 100px) rotate(-25deg);
+}
+.fork{
+	transform: translate(65px, 78px) rotate(25deg);
+}
+.food-plate{
+	background-color: $food-plate;
+}
+
+.sausage-one{
+	stroke:$sausage-color;
+	stroke-width:10;
+	 // stroke-linecap:round;
+
+}
+.rock{
+	background-color: $rock-area;
+}
+.ballon{
+	background-color:$ballon-area;
+}
+.phonography{
+	background-color:$disc-area;
+
+	.case{
+		width:45%;
+		height: 9em;
+		margin-left:17%;
+		margin-top:5%;
+		background:linear-gradient(-135deg , transparent 20px, rgb(45,165,201)  0),
+   	 linear-gradient(135deg , transparent 20px, rgb(255,255,255) 0);
+		position: relative;
+		box-shadow: 7px 7px 3px rgba(0,0,0,0.5);
+		border-radius: 0 10px 0 0;
+		z-index:auto;
+		.pin{
+			background-color:white;
+			height:0.6em;
+			transform: translate(0, 120px);
+			width:0.7%;
+			margin-left:5px;
+			padding-top: 3%;
+		}
+		.pin2{
+			@extend .pin;
+			transform: translate(0, 70px);
+		}
+		.pin3{
+			@extend .pin;
+			transform: translate(0, 20px);
+		}
+		.pin4{
+			@extend .pin3;
+			transform: translate(0, -30px);
+		}
+		.disc-number{
+			font-weight: lighter;
+			font-size: 0.8em;
+			color:rgba(0,0,0,0.6);
+			transform: translate(-55px, -70px);
+			font-family: 'Finger Paint', cursive;
+		}
+		.roman-numeral{
+			@extend .disc-number;
+			transform: translate(-60px, -85px);
+		}
+	}
+	.disc{
+		width: 10%;
+		height: 5em;
+		border: 1px solid black;
+		position:absolute;
+		z-index: 1 ;
+		border-radius: 720px;
+		border: 30px solid black;
+		transform: translate(150px, 30px);
+
+		.inner-circle{
+			@extend .disc;
+			width:20%;
+			height:1em;
+			border:34px solid rgba(255,255,24,0.9);
+			transform: translate(-2px, -3px);
+		}
+
+	}
+}
+.sausage-two{
+	@extend .sausage-one;
+}
+
+
+@keyframes hair-color{
+	0%{
+		fill:rgb(255,193,37);
+	}
+	40%{
+		fill:rgb(72,16,13);
+	}
+	70%{
+		fill:rgb(163,163,163);
+	}
+	90%{
+		fill:rgb(208,122,70);
+	}
+}
+
+// @keyframes fill-color{
+// 	from{
+// 		background-color:
+// 	}
+// }

@@ -1,0 +1,61 @@
+h2{
+	font-family: 'Gloria Hallelujah', cursive;		
+}
+.text-area{
+	margin-left:20%;
+	margin-top:2.5%; 
+	background-color: $main-two;
+	width:60%;
+	height:90%;
+	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .2),
+	-8px -8px 2px -1px rgba(0, 0, 0, .2);
+	position: absolute;
+	text-align:center;
+
+	.first-text{
+		// background-color: black;
+		width:100%;
+		height:10%;
+		// border-bottom:1px solid $primary-color;
+		position: relative;
+
+		h2{
+			color: rgba(0,0,0,.5);
+			padding-top: 4%;
+			font-size: 5em;
+			line-height: 0.2;
+			text-transform: uppercase;
+			letter-spacing: 40px;
+		}
+	}
+	.second-text{
+		@extend .first-text;
+		background-color:#e18484;
+		height: 30+5.92%;
+		.text2{
+			color: rgba(0,0,0,.5);
+			padding-top: 10%;
+			font-size: 5em;
+			// line-height: 0.2;
+			// position: relative;
+			text-transform: uppercase;
+			letter-spacing: 20px;
+		}
+	}
+	.third-text{
+		@extend .first-text;
+		height:30% + 2;
+		background-color: #910aff;
+
+		h2{
+			color: rgba(0,0,0,.5);
+			padding-top: 10%;
+			font-size: 5em;
+			// line-height: 0.2;
+			// position: relative;
+			text-transform: uppercase;
+			letter-spacing: 20px;
+			margin-top:0; 
+		}
+	}
+}
